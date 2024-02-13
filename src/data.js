@@ -1,8 +1,10 @@
+import updateDisplay from "./dom";
+
 function process(weatherData) {
     const location = weatherData.location.name;
     const temp = weatherData.current.temp_f;
-    console.log(temp);
-    console.log(location);
+    const condition = weatherData.current.condition.text;
+    updateDisplay(location, temp, condition)
 }
 
 async function getWeather(locationName) {
@@ -12,7 +14,7 @@ async function getWeather(locationName) {
         console.log(weatherData);
         process(weatherData);
     } catch(error) {
-        alert('Please enter a valid location');
+        alert('Please enter a valid location or zipcode');
     }
   
 }
