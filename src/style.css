@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading {
+    font-size: 50px;
+}
+.searchBar {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.searchBar input {
+    height: 30px;
+    font-size: 25px;
+}
+.searchBar button {
+    height: 30px;
+}
+
+.content {
+    margin-top: 3vh;
+    border: 1px solid black;
+    height: 500px;
+    width: 500px
+}
